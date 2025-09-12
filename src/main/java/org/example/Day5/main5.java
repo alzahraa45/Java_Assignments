@@ -1,4 +1,4 @@
-package org.example.assignment5;
+package org.example.Day5;
 
 import java.util.Scanner;
 
