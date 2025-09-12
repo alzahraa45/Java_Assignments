@@ -5,7 +5,29 @@ import java.util.Scanner;
 public class main5 {
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
-        Student s1=new Student();
+        int numberOfStudents=3;
+        Student [] students=new Student[numberOfStudents];
+        for (int i = 0; i < numberOfStudents; i++) {
+            students[i] = new Student();
+            System.out.print("Enter name of student " + (i + 1) + ": ");
+            students[i].name = s.nextLine();
+            System.out.print("Enter ID: ");
+            students[i].id = s.nextInt();
+            System.out.print("Enter grade for subject 1: ");
+            students[i].grade1 = s.nextFloat();
+            System.out.print("Enter grade for subject 2: ");
+            students[i].grade2 = s.nextFloat();
+            System.out.print("Enter grade for subject 3: ");
+            students[i].grade3 = s.nextFloat();
+            s.nextLine();
+        }
+        for (int i = 0; i < students.length; i++) {
+            students[i].displayInfo();
+        }
+
+
+
+       /* Student s1=new Student();     //حل اخر
         System.out.println("enter Student name:");
         s1.name=s.nextLine();
 
@@ -18,7 +40,7 @@ public class main5 {
         s1.grade3=s.nextFloat();
 
         System.out.println("------------this is Student data------------");
-        s1.displayInfo();
+        s1.displayInfo();*/
 
     }
 }

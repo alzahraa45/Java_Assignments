@@ -19,11 +19,12 @@ public class Student {
        }
     }
     public void displayInfo(){
-        System.out.println("name is: "+name);
-        System.out.println("id is: "+id);
-        System.out.println("grade1 is: "+grade1+" , "+"grade2 is: "+grade2+" , "+"grade3 is: "+grade3);
-        System.out.println("is passed: "+ isPassed());
-        System.out.println("aaverage is: "+avg);
+        System.out.println("--- Student Report ---");
+        System.out.println("Name: " + name);
+        System.out.println("ID: " + id);
+        System.out.printf("Average: %.2f\n", calculateAverage());
+        System.out.println("Result: " + (isPassed() ? "Passed" : "Failed"));
+        System.out.println("-------------------------------");
     }
 
 }
